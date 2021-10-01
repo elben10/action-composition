@@ -1,8 +1,6 @@
 name: 'Print stuff'
 description: 'Greet someone'
 runs:
-  # env:
-  #   a: kflnas
   using: "composite"
   steps:
     - run: echo Hello.
