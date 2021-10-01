@@ -1,6 +1,8 @@
 name: 'Print stuff'
 description: 'Greet someone'
 runs:
+  env:
+    a: 2
   using: "composite"
   steps:
     - run: echo Hello.
