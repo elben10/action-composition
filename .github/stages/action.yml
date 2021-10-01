@@ -2,7 +2,7 @@ name: 'Print stuff'
 description: 'Greet someone'
 runs:
   env:
-    a: 2
+    a: kflnas
   using: "composite"
   steps:
     - run: echo Hello.
