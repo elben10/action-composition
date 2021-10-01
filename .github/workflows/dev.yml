@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     name: Test our code
     steps:
-      - uses: .github/stages/print.yml
+      - uses: ./.github/stages/print.yml
