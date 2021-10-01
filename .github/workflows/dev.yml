@@ -1,0 +1,8 @@
+on: [push]
+
+jobs:
+  Test-Code:
+    runs-on: ubuntu-latest
+    name: Test our code
+    steps:
+      - uses: ../stages/print.yml
