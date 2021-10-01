@@ -1,7 +1,11 @@
 name: 'Print stuff'
 description: 'Greet someone'
+inputs:
+  env:
+    description: The environment
+    required: true
 runs:
   using: "composite"
   steps:
-    - run: echo Hello.
+    - run: echo The current environment is ${{ inputs.env }}.
       shell: bash
