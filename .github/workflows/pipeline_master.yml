@@ -12,4 +12,4 @@ jobs:
   call-workflow-passing-data:
     uses: elben10/action-composition/.github/workflows/stage_deploy.yml@master
     with:
-      env_name: NAME
+      env_name: ${{ env.SERVER }}
