@@ -1,4 +1,4 @@
-name: Call a reusable workflow.
+name: Call a reusable workflow
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    uses: elben10/action-composition/workflow-B.yml@master
+    uses: elben10/action-composition/.github/workflows/workflow-B.yml@master
     with:
       username: mona
     secrets:
