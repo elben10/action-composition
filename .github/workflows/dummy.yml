@@ -1,5 +1,7 @@
 name: dummy
 
+on: push
+
 env:
   one: 1
   two: zwei
