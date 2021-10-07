@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  SERVER: production
+
 jobs:
   call-workflow-passing-data:
     uses: elben10/action-composition/.github/workflows/stage_deploy.yml@master
