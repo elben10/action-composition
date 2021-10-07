@@ -6,9 +6,7 @@ on:
       - master
 
 jobs:
-  env:
-    NAME: MASTER
   call-workflow-passing-data:
     uses: elben10/action-composition/.github/workflows/stage_deploy.yml@master
     with:
-      env_name: ${{ env.NAME }}
+      env_name: NAME
