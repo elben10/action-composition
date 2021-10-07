@@ -8,7 +8,3 @@ on:
 jobs:
   call-workflow-passing-data:
     uses: elben10/action-composition/.github/workflows/stage_deploy.yml@master
-    with:
-      username: mona
-    secrets:
-      token: ${{ secrets.TOKEN }}
