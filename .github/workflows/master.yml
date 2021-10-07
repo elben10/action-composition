@@ -7,4 +7,4 @@ on:
 
 jobs:
   workflow:
-    uses: elben10/action-composition/.github/stages/deploy.yml@main
+    uses: elben10/action-composition/.github/workflows/deploy.yml@main
