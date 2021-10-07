@@ -1,0 +1,10 @@
+name: Master
+
+on: 
+  push:
+    branches:
+      - "main"
+
+jobs:
+  workflow:
+    uses: elben10/action-composition/.github/stages/deploy.yml
