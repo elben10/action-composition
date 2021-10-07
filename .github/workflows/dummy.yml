@@ -8,10 +8,7 @@ env:
   three: tres
 
 jobs:
-  first-job:
-    runs-on: ubuntu-latest
-    steps:
-    - run: |
-        echo "${{ env.one }}"
-        echo "${{ env.two }}"
-        echo "${{ env.three }}"
+  call-workflow-passing-data:
+    uses: elben10/action-composition/.github/workflows/stage_deploy.yml@master
+    with:
+      env_name: ${{ env.one }}
